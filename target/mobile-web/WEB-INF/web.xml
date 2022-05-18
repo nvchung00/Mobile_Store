@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         version="2.5" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"> 
+  <display-name>mobile-web</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.laptrinhweb.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ProductAdd</servlet-name>
+    <servlet-class>com.laptrinhweb.controller.ProductAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductAdd</servlet-name>
+    <url-pattern>/ProductAdd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ProductDetail</servlet-name>
+    <servlet-class>com.laptrinhweb.controller.ProductDetail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductDetail</servlet-name>
+    <url-pattern>/ProductDetail</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>GioHangServlet</servlet-name>
+    <servlet-class>com.laptrinhweb.controller.GioHangServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GioHangServlet</servlet-name>
+    <url-pattern>/GioHangServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
